@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/place_header"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/image_placeholder"/>
+
+    <View
+        android:id="@+id/place_gradient"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:layout_marginTop="150dp"
+        android:scaleType="fitXY"
+        android:background="@drawable/gradient_rect"/>
+
+    <TextView
+        android:id="@+id/placedetails_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="150dp"
+        android:text="@string/placedetails_title"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/placedetails_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/placedetails_title"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/placedetails_address"
+        android:textColor="#ffffff"/>
+
+    <ImageView
+        android:id="@+id/placedetails_gomaps"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/placedetails_title"
+        android:layout_toRightOf="@id/placedetails_address"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/launchmaps_image" />
+
+    <ImageView
+        android:id="@+id/placedetails_lyft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/placedetails_title"
+        android:layout_toRightOf="@id/placedetails_gomaps"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/lyft_28px"/>
+
+    <View
+        style="@style/Divider"
+        android:id="@+id/placetitle_divider"
+        android:layout_width="275dp"
+        android:layout_height="2dp"
+        android:layout_below="@id/placedetails_address"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:background="#ffffff" />
+
+    <ImageView
+        android:id="@+id/placedetails_overflow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/placetitle_divider"
+        android:src="@drawable/ic_action_overflow" />
+
+    <TextView
+        android:id="@+id/placedetails_people"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/placetitle_divider"
+        android:layout_toRightOf="@id/placedetails_overflow"
+        android:layout_marginTop="15dp"
+        android:text="@string/placedetails_people"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageView
+        android:id="@+id/capacity_divider"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/placetitle_divider"
+        android:layout_toRightOf="@id/placedetails_people"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/capacity_divider"/>
+
+    <TextView
+        android:id="@+id/placedetails_capacity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/placetitle_divider"
+        android:layout_toRightOf="@id/capacity_divider"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:text="@string/placedetails_capacity"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+
+    <View
+        style="@style/DotDivider"
+        android:id="@+id/people_divider"
+        android:layout_below="@id/placetitle_divider"
+        android:layout_toRightOf="@id/placedetails_capacity"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#ffffff" />
+
+    <TextView
+        android:id="@+id/placedetails_friendsnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/placetitle_divider"
+        android:layout_toRightOf="@id/people_divider"
+        android:layout_marginTop="15dp"
+        android:text="@string/placedetails_friendsnumber"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/placedetails_friends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/placetitle_divider"
+        android:layout_toRightOf="@id/placedetails_friendsnumber"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:text="@string/placedetails_friends"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <View
+        style="@style/DotDivider"
+        android:id="@+id/friendsdivider"
+        android:layout_below="@id/placetitle_divider"
+        android:layout_toRightOf="@id/placedetails_friends"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#ffffff" />
+
+    <ImageView
+        android:id="@+id/temperature_rating"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@id/friendsdivider"
+        android:layout_below="@id/placetitle_divider"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/heatingup_image"/>
+
+    <TextView
+        android:id="@+id/temperature_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/placetitle_divider"
+        android:layout_toRightOf="@id/temperature_rating"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:text="@string/placedetails_heat"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <View
+        style="@style/Divider"
+        android:id="@+id/feeds_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@id/place_header"
+        android:background="#000000"/>
+
+    <TextView
+        android:id="@+id/hypefeed_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/place_header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/placedetails_hypefeed"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/hypefeed_recycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/feeds_bar"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp">
+    </android.support.v7.widget.RecyclerView>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_placedetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_action_edit" />
+
+
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/editprof_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/edit_profile"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageButton
+        android:id="@+id/editprof_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_action_cancel"
+        android:background="@drawable/cancel_acceptbutton" />
+
+    <TextView
+        android:id="@+id/editprof_ctext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editprof_cancel"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@id/editprof_cancel"
+        android:layout_alignRight="@id/editprof_cancel"
+        android:text="@string/cancel"
+        android:gravity="center"/>
+
+    <ImageButton
+        android:id="@+id/editprof_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_action_accept"
+        android:background="@drawable/cancel_acceptbutton" />
+
+    <TextView
+        android:id="@+id/editprof_dtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editprof_done"
+        android:layout_alignLeft="@id/editprof_done"
+        android:layout_alignRight="@id/editprof_done"
+        android:layout_marginTop="10dp"
+        android:text="@string/done"
+        android:gravity="center"/>
+
+    <View
+        android:id="@+id/editprof_divider"
+        style="@style/Divider"
+        android:layout_height="2dp"
+        android:layout_below="@id/editprof_dtext"
+        android:layout_marginTop="10dp"
+        android:background="#e85e54" />
+
+    <ImageView
+        android:id="@+id/editprof_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editprof_divider"
+        android:layout_alignLeft="@id/editprof_cancel"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/profile_pic"
+        android:maxWidth="80dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"/>
+
+    <TextView
+        android:id="@+id/ediprof_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/editprof_pic"
+        android:layout_alignBottom="@id/editprof_pic"
+        android:layout_toRightOf="@id/editprof_pic"
+        android:layout_marginLeft="20dp"
+        android:text="@string/upload_pic"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center"/>
+
+    <View
+        style="@style/Divider"
+        android:layout_below="@id/editprof_pic"
+        android:layout_marginTop="5dp" />
+
+    <ImageView
+        android:id="@+id/editprof_locicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editprof_pic"
+        android:layout_alignLeft="@id/editprof_cancel"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/action_place"/>
+
+    <EditText
+        android:id="@+id/editprof_locedit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/editprof_locicon"
+        android:layout_alignBottom="@id/editprof_locicon"
+        android:hint="@string/prof_location"
+        android:gravity="center"
+        android:maxLength="25"
+        android:inputType="textAutoCorrect|textCapSentences"/>
+
+    <ImageView
+        android:id="@+id/editprof_bioicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editprof_locicon"
+        android:layout_alignLeft="@id/editprof_locicon"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/prof_bio"/>
+
+    <EditText
+        android:id="@+id/editprof_bioedit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/editprof_bioicon"
+        android:layout_alignBottom="@id/editprof_bioicon"
+        android:hint="@string/prof_biotext"
+        android:gravity="center"
+        android:maxLength="80"
+        android:inputType="textAutoCorrect|textCapSentences"/>
+
+
+</RelativeLayout>

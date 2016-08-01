@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".EduPageActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <ImageView
+        android:id="@+id/edupage_hm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/hmicon_crop"
+        android:maxWidth="50dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/edu_divider"
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            style="@style/Divider"
+            android:background="#ffffff"/>
+
+        <Button
+            android:id="@+id/edu_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/edu_divider"
+            android:background="@drawable/regbutton"
+            android:text="@string/loginbutton"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:id="@+id/edu_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/edu_divider"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/regbutton"
+            android:text="@string/registerbutton"
+            android:textColor="#ffffff"/>
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

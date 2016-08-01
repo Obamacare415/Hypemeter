@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/filters_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/basic_filters"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+        <View
+            style="@style/Divider"
+            android:layout_height="2dp"
+            android:layout_below="@id/filters_title"
+            android:background="#e85e54" />
+
+        <TextView
+            android:id="@+id/radius"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/filters_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/radius"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"/>
+
+
+        <RadioGroup
+            android:id="@+id/radiusradiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radius"
+            android:layout_marginLeft="5dp">
+
+            <RadioButton
+                android:id="@+id/radhalf_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radius_.5" />
+
+            <RadioButton
+                android:id="@+id/rad1_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radius_1" />
+
+            <RadioButton
+                android:id="@+id/rad2_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radius_2" />
+
+            <RadioButton
+                android:id="@+id/rad5_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radius_5" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/price_range"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radiusradiogroup"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/price_range"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"/>
+
+        <RadioGroup
+            android:id="@+id/priceradiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/price_range"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp">
+
+            <RadioButton
+                android:id="@+id/price1_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/price1" />
+
+            <RadioButton
+                android:id="@+id/price2_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/price2" />
+
+            <RadioButton
+                android:id="@+id/price3_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/price3" />
+
+            <RadioButton
+                android:id="@+id/price4_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/price4" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/thefunstuff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/priceradiogroup"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/thefunstuff"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+        <View
+            style="@style/Divider"
+            android:layout_height="2dp"
+            android:layout_below="@id/thefunstuff"
+            android:background="#e85e54" />
+
+        <CheckBox
+            android:id="@+id/restaurants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/thefunstuff"
+            android:layout_marginLeft="5dp"
+            android:text="@string/restaurants" />
+
+        <CheckBox
+            android:id="@+id/bars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/restaurants"
+            android:layout_marginLeft="5dp"
+            android:text="@string/bars" />
+
+        <CheckBox
+            android:id="@+id/nightlife"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bars"
+            android:layout_marginLeft="5dp"
+            android:text="@string/nightlife" />
+
+        <CheckBox
+            android:id="@+id/tourism"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nightlife"
+            android:layout_marginLeft="5dp"
+            android:text="@string/tourism" />
+
+        <CheckBox
+            android:id="@+id/entertainment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tourism"
+            android:layout_marginLeft="5dp"
+            android:text="@string/entertainment" />
+
+        <CheckBox
+            android:id="@+id/fitnessrec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/entertainment"
+            android:layout_marginLeft="5dp"
+            android:text="@string/fitnessrec" />
+
+        <CheckBox
+            android:id="@+id/shopping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fitnessrec"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="100dp"
+            android:text="@string/shopping" />
+
+    </RelativeLayout>
+
+</ScrollView>

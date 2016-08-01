@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <TextView
+        android:id="@+id/forgotpass_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/forgotpassword"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageButton
+        android:id="@+id/cancelpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_action_cancel"
+        android:background="@drawable/cancel_acceptbutton" />
+
+    <TextView
+        android:id="@+id/cancelpass_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cancelpass"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@id/cancelpass"
+        android:layout_alignRight="@id/cancelpass"
+        android:text="@string/cancel"
+        android:gravity="center"/>
+
+    <ImageButton
+        android:id="@+id/pass_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_action_accept"
+        android:background="@drawable/cancel_acceptbutton" />
+
+    <TextView
+        android:id="@+id/done_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pass_done"
+        android:layout_alignLeft="@id/pass_done"
+        android:layout_alignRight="@id/pass_done"
+        android:layout_marginTop="10dp"
+        android:text="@string/done"
+        android:gravity="center"/>
+
+    <View
+        style="@style/Divider"
+        android:layout_height="2dp"
+        android:layout_below="@id/cancelpass_text"
+        android:layout_marginTop="10dp"
+        android:background="#e85e54" />
+
+    <EditText
+        android:id="@+id/passemail_entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/forgotpass_title"
+        android:layout_alignRight="@id/forgotpass_title"
+        android:layout_below="@id/forgotpass_title"
+        android:layout_marginTop="80dp"
+        android:hint="@string/enteremail"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/forgotpass_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passemail_entry"
+        android:layout_alignLeft="@id/forgotpass_title"
+        android:layout_alignRight="@id/forgotpass_title"
+        android:layout_marginTop="50dp"
+        android:text="@string/sendpass"
+        android:textColor="#ffffff"
+        android:background="@drawable/regbutton" />
+
+    <ImageView
+        android:id="@+id/forgotpass_hmicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/forgotpass_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/hmicon_android"
+        android:maxWidth="200dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true" />
+
+</RelativeLayout>

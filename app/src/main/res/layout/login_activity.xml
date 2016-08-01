@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff" >
+
+        <ImageView
+            android:id="@+id/login_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/hmicon_android"
+            android:paddingTop="10dp"
+            android:maxWidth="275dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true" />
+
+        <EditText
+            android:id="@+id/username_entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_icon"
+            android:layout_alignLeft="@id/login_icon"
+            android:layout_alignRight="@id/login_icon"
+            android:inputType="textEmailAddress"
+            android:hint="@string/username_entry" />
+
+        <EditText
+            android:id="@+id/loginpassword_entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username_entry"
+            android:layout_alignLeft="@id/login_icon"
+            android:layout_alignRight="@id/login_icon"
+            android:inputType="textPassword"
+            android:hint="@string/password"
+            android:fontFamily="sans-serif" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginpassword_entry"
+            android:layout_alignLeft="@id/login_icon"
+            android:layout_alignRight="@id/login_icon"
+            android:layout_marginTop="10dp"
+            android:text="@string/loginbutton"
+            android:textColor="#ffffff"
+            android:background="@drawable/regbutton" />
+
+        <Button
+            android:id="@+id/login_fb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_button"
+            android:layout_alignLeft="@id/login_icon"
+            android:layout_alignRight="@id/login_icon"
+            android:layout_marginTop="5dp"
+            android:text="@string/loginfb"
+            android:textColor="#ffffff"
+            android:background="#3B5999" />
+
+        <TextView
+            android:id="@+id/login_forgotpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_fb"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/forgotpassword" />
+
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/login_forgotpassword"
+            android:layout_alignLeft="@id/login_forgotpassword"
+            android:layout_alignRight="@id/login_forgotpassword"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="40dp"
+            android:text="@string/registerbutton"
+            android:textColor="#ffffff"
+            android:background="#EF9A9A" />
+
+        <TextView
+            android:id="@+id/invisi_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:text="@string/hm_slogan"
+            android:textColor="#ffffff" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

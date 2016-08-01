@@ -1,0 +1,203 @@
+ <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:id="@+id/fragment_settings">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/location_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/location_settings"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <View
+                style="@style/Divider"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/location_settings"
+                android:background="#e85e54"/>
+
+            <TextView
+                android:id="@+id/sethometext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/location_settings"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="15dp"
+                android:text="@string/sethome"
+                android:textAppearance="?android:attr/textAppearanceListItem"/>
+
+            <Button
+                android:id="@+id/sethomebutton"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@id/sethometext"
+                android:layout_alignTop="@id/sethometext"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/enterhomebtn"
+                android:textColor="#ffffff"
+                android:background="@drawable/regbutton" />
+
+
+            <TextView
+                android:id="@+id/setworktext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sethometext"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="15dp"
+                android:text="@string/setwork"
+                android:textAppearance="?android:attr/textAppearanceListItem" />
+
+            <Button
+                android:id="@+id/setworkbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@id/setworktext"
+                android:layout_alignTop="@id/setworktext"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/enterhomebtn"
+                android:textColor="#ffffff"
+                android:background="@drawable/regbutton" />
+
+            <Switch
+                android:id="@+id/notifycheckin_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignRight="@id/sethomebutton"
+                android:layout_below="@id/setworktext"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/notifycheckin"
+                android:textAppearance="?android:attr/textAppearanceListItem" />
+
+            <Switch
+                android:id="@+id/savehistory_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignRight="@id/sethomebutton"
+                android:layout_below="@id/notifycheckin_switch"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/savehistory"
+                android:textAppearance="?android:attr/textAppearanceListItem" />
+
+            <TextView
+                android:id="@+id/seerecent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/savehistory_switch"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/seerecent"
+                android:textAppearance="?android:attr/textAppearanceListItem" />
+
+            <TextView
+                android:id="@+id/clearrecent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/seerecent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/clearrecent"
+                android:textAppearance="?android:attr/textAppearanceListItem" />
+
+            <TextView
+                android:id="@+id/privacy_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/clearrecent"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/privacy_settings"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000"/>
+
+            <View
+                style="@style/Divider"
+                android:layout_below="@id/privacy_settings"
+                android:layout_marginTop="5dp"
+                android:background="#e85e54"/>
+
+            <Switch
+                android:id="@+id/confirmsubs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignRight="@id/sethomebutton"
+                android:layout_below="@id/privacy_settings"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/confirmsubs"
+                android:textAppearance="?android:attr/textAppearanceListItem" />
+
+            <Switch
+                android:id="@+id/push_yournotif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignRight="@id/sethomebutton"
+                android:layout_below="@id/confirmsubs"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/push_yournotify"
+                android:textAppearance="?android:attr/textAppearanceListItem" />
+
+            <TextView
+                android:id="@+id/endbackground"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/push_yournotif"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/endbackground"
+                android:textAppearance="?android:attr/textAppearanceListItem" />
+
+            <Button
+                android:id="@+id/endbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@id/endbackground"
+                android:layout_alignLeft="@id/sethomebutton"
+                android:layout_alignTop="@id/endbackground"
+                android:text="@string/end"
+                android:textColor="#ffffff"
+                android:background="@drawable/regbutton" />
+
+
+            <TextView
+                android:id="@+id/versionnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/endbackground"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="250dp"
+                android:text="@string/versionnumber"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
